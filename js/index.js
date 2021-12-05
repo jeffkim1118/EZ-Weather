@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", ()=>{
     const apiKey = APIKEY
     let button = document.querySelector('#submit')
-    let cityName = document.querySelector('.name')
+    let cityName = document.querySelector('.name')    
     let desc = document.querySelector('.desc')
     let temp = document.querySelector('.temp')
     let windSpeed = document.querySelector('.windSpeed')
@@ -21,11 +21,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
             let windSpeedValue = data['wind']['speed'];
             let tempValue = data['main']['temp'];
             let descValue = data['weather'][0]['description'];
+            let icon = data['weather'][0]['icon'];
 
             cityName.innerHTML = nameValue;
             windSpeed.innerHTML = windSpeedValue+'mph';
-            temp.innerHTML = tempValue+'&#x2109;';
+            temp.innerHTML = tempValue+' &#x2109;';
             desc.innerHTML = descValue.toUpperCase();
+
             
             if(tempValue < 50 && tempValue >= 35){      
                 recom.innerHTML = "I recommend you to wear a jacket!"
@@ -36,6 +38,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }else if(tempValue >= 70){
                 recom.innerHTML = "It's hot today! Wear T-shirts and shorts!"
             }  
+            })
+            .catch(() => {
+                alert("Please search for a valid city")
             })
         }    
     })
