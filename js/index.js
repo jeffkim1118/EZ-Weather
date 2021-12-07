@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             let tempValue = data['main']['temp'];
             let descValue = data['weather'][0]['description'];
             let icon = data['weather'][0]['icon'];
+            document.querySelector('.icon').src = "http://openweathermap.org/img/wn/"+ icon +".png"
 
             cityName.innerHTML = nameValue;
             windSpeed.innerHTML = windSpeedValue+'mph';

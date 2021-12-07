@@ -84,6 +84,7 @@ input[type="text"]{
     background-color: cornflowerblue;
     font-size: 20px;
 }
+
 .clear:hover{
     background-color: cornsilk;
 }
