@@ -26,6 +26,7 @@ body{
     background-color:#ffffff80;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 7px 7px 5px black;
 }
 
 .inputMsg{
@@ -66,6 +67,7 @@ input[type="text"]{
     border: none;
     width: 50px;
     height: 50px;
+    display: none;
 }
 
 
@@ -83,6 +85,7 @@ input[type="text"]{
     border-radius: 5px;
     background-color: cornflowerblue;
     font-size: 20px;
+    display: none;
 }
 
 .clear:hover{
