@@ -1,4 +1,4 @@
-###Ez Weather app
+:partly_sunny: ###Ez Weather app
 
 ![image](https://user-images.githubusercontent.com/64029918/145827484-3bdedbc3-37de-4ae3-bd25-2a0b1c507812.png)
 I made a simple weather app that allows people to search up weather by city names. I used a weather API called OpenWeatherMap API to provide accurate weather data as possible.
