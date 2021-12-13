@@ -19,12 +19,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
             .then(res => res.json())
             .then(data => {
             //Querying all the necessary data from the api
+            
             let nameValue = data['name'];
             let windSpeedValue = data['wind']['speed'];
             let tempValue = data['main']['temp'];
             let descValue = data['weather'][0]['description'];
             let icon = data['weather'][0]['icon'];
             //Weather Icon Display
+            document.body.style.backgroundImage = "url('https://source.unsplash.com/1920x1080/?" + nameValue + "')";
             let iconDisplay = document.querySelector('.icon')
             iconDisplay.src = "http://openweathermap.org/img/wn/"+ icon +".png"
             iconDisplay.style.display = "inline-block";
@@ -34,6 +36,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
             temp.innerHTML = tempValue+' &#x2109;';
             desc.innerHTML = descValue.toUpperCase();
             document.querySelector('.clear').style.display = "inline-block";
+
+            
 
             //Recommendation depends on temperature
             if(tempValue < 50 && tempValue >= 35){      

@@ -5,7 +5,7 @@
 }
 
 html{
-    background-color: #A9A9A9;
+    background: url('../images/backgroundIMG.jpg') no-repeat;
 }
 
 body{
@@ -14,11 +14,10 @@ body{
     align-items: center;
     height: 100vh;
     margin: auto;
-    width: fit-content;
 }
 
 .input{
-    width: 90%;
+    width: 40%;
 }
 
 .container{
