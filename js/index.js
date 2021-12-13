@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", ()=>{
+    //Please enter your own API key here.
     const apiKey = APIKEY
+
     let button = document.querySelector('#submit')
     let cityName = document.querySelector('.name')    
     let desc = document.querySelector('.desc')
