@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/jeffkim1118/EZ-Weather/issues"
   },
-  "homepage": "https://github.com/jeffkim1118/EZ-Weather#readme"
+  "homepage": "https://github.com/jeffkim1118/EZ-Weather#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3"
+  }
 }

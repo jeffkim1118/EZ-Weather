@@ -1,8 +1,8 @@
-import APIKEY from '../api.js';
-
+// import APIKEY from '../api.js';
+require('dotenv').config();
 document.addEventListener("DOMContentLoaded", ()=>{
     //Please enter your own API key here.
-    const apiKey = APIKEY;
+    const apiKey = process.env.APIKEY;
 
     let button = document.querySelector('#submit')
     let cityName = document.querySelector('.name')    
